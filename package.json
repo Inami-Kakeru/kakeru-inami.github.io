@@ -2,6 +2,7 @@
   "name": "piazzasaluto",
   "version": "1.0.0",
   "description": "美容室ぴあざさるうとのウェブサイト",
+  "homepage": "https://inami-kakeru.github.io/kakeru-inami.github.io",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
