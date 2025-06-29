@@ -1,33 +1,16 @@
 import React from 'react';
 import OptimizedImage from './OptimizedImage';
 import GoogleMap from './GoogleMap';
+import HeroBanner from '@/components/Common/HeroBanner';
 
 const Salon = () => {
   return (
     <div className="min-h-screen bg-base salon-page">
       {/* ヒーローセクション */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <OptimizedImage
-            src="/images/hero-bg.jpg"
-            alt="サロン紹介"
-            className="w-full h-full object-cover"
-            priority={true}
-          />
-          {/* 茶色系の半透明オーバーレイで写真を淡くし、文字の可読性を向上 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brown-900/70 via-brown-800/60 to-brown-900/50 dark:bg-brown-950/80"></div>
-        </div>
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-mincho font-bold mb-6">
-            サロン紹介
-          </h1>
-          <div className="w-32 h-1 bg-accent mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl font-light leading-relaxed">
-            創業50年、主婦層に愛される<br className="md:hidden" />
-            アットホームな美容室
-          </p>
-        </div>
-      </section>
+      <HeroBanner
+        title="サロン紹介"
+        subtitle="創業50年、主婦層に愛される\nアットホームな美容室"
+      />
 
       {/* メインコンセプト */}
       <section className="py-20 bg-white">

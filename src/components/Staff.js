@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
+import HeroBanner from '@/components/Common/HeroBanner';
 
 const Staff = () => {
   const [selectedStaff, setSelectedStaff] = useState(null);
@@ -53,28 +54,10 @@ const Staff = () => {
       <SEO {...seoConfig} />
       
       {/* ヒーローセクション */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <OptimizedImage
-            src="/images/hero-bg.jpg"
-            alt="スタッフ紹介"
-            className="w-full h-full object-cover"
-          />
-          {/* 茶色系の半透明オーバーレイで写真を淡くし、文字の可読性を向上 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brown-900/70 via-brown-800/60 to-brown-900/50 dark:bg-brown-950/80"></div>
-        </div>
-        
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-mincho font-bold mb-6">
-            スタッフ紹介
-          </h1>
-          <div className="w-32 h-1 bg-accent mx-auto mb-6"></div>
-          <p className="text-xl md:text-2xl font-light leading-relaxed">
-            経験豊富なスタッフが<br className="md:hidden" />
-            あなたの美しさを引き出します
-          </p>
-        </div>
-      </section>
+      <HeroBanner
+        title="スタッフ紹介"
+        subtitle="経験豊富なスタッフが\nあなたの美しさを引き出します"
+      />
 
       {/* メインコンテンツ */}
       <section className="py-20 bg-base">
