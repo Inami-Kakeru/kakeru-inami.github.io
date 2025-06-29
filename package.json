@@ -1,8 +1,8 @@
 {
   "name": "piazzasaluto",
   "version": "1.0.0",
-  "description": "美容室ぴあざさるうとのウェブサイト",
   "homepage": "https://inami-kakeru.github.io/kakeru-inami.github.io",
+  "description": "美容室ぴあざさるうとのウェブサイト",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
@@ -23,6 +23,7 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
+    "test:coverage": "craco test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -50,3 +51,4 @@
     "postcss": "^8.4.35"
   }
 }
+
