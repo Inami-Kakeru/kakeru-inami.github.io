@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/kakeru-inami.github.io/static/css/main.12588874.css",
+    "main.js": "/kakeru-inami.github.io/static/js/main.440d2572.js",
+    "static/media/白髪染め.png": "/kakeru-inami.github.io/static/media/白髪染め.020bebaea6ed297760f7.png",
+    "static/media/エクステ増毛.png": "/kakeru-inami.github.io/static/media/エクステ増毛.f5ba9766e2ea1e928956.png",
+    "static/media/salon-interior.jpg": "/kakeru-inami.github.io/static/media/salon-interior.8bbf6c8d4477a4380864.jpg",
+    "static/media/TOKIOインカラミシステムトリートメント.png": "/kakeru-inami.github.io/static/media/TOKIOインカラミシステムトリートメント.23a287600bc74b4da243.png",
+    "static/media/salon-equipment.jpg": "/kakeru-inami.github.io/static/media/salon-equipment.0e5fa2768f9764379c13.jpg",
+    "static/media/salon-amenity.jpg": "/kakeru-inami.github.io/static/media/salon-amenity.3368649e229488e7d684.jpg",
+    "static/media/hero-bg.jpg": "/kakeru-inami.github.io/static/media/hero-bg.3754d763e870a01a9c9b.jpg",
+    "static/media/og-image.jpg": "/kakeru-inami.github.io/static/media/og-image.72a9a4c0dd9ce6257c1d.jpg",
+    "static/media/menu-hero.jpg": "/kakeru-inami.github.io/static/media/menu-hero.66b9a231eec383b9d203.jpg",
+    "index.html": "/kakeru-inami.github.io/index.html",
+    "main.12588874.css.map": "/kakeru-inami.github.io/static/css/main.12588874.css.map",
+    "main.440d2572.js.map": "/kakeru-inami.github.io/static/js/main.440d2572.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.12588874.css",
+    "static/js/main.440d2572.js"
+  ]
+}
