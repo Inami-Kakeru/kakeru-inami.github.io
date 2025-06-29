@@ -2,6 +2,7 @@
   "name": "piazzasaluto",
   "version": "1.0.0",
   "description": "美容室ぴあざさるうとのウェブサイト",
+  "homepage": "https://inami-kakeru.github.io/kakeru-inami.github.io/",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",
@@ -22,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +49,7 @@
     "@testing-library/cypress": "^10.0.3",
     "autoprefixer": "^10.4.17",
     "cypress": "^14.4.1",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.35"
   }
 }

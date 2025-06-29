@@ -1,5 +1,6 @@
 import React from 'react';
 import OptimizedImage from '@/components/OptimizedImage';
+import { images } from '@/utils/images';
 
 /**
  * HeroBanner 共通コンポーネント
@@ -9,13 +10,15 @@ import OptimizedImage from '@/components/OptimizedImage';
  * @param {string} badge   - バッジテキスト（任意）
  * @param {string} heightClass - 高さクラス（例:h-96）。デフォルトh-96。
  */
-const HeroBanner = ({ title, subtitle, bgImage = '/images/hero-bg.jpg', badge, heightClass = 'h-96' }) => {
+const HeroBanner = ({ title, subtitle, bgImage = images.heroBg, badge, heightClass = 'h-96' }) => {
+  // bgImageがキー文字列の場合はimagesマップから取得
+  const resolvedBg = typeof bgImage === 'string' && bgImage in images ? images[bgImage] : bgImage;
   return (
     <section className={`relative ${heightClass} flex items-center justify-center overflow-hidden`}>
       {/* 背景画像 */}
       <div className="absolute inset-0 z-0">
         <OptimizedImage
-          src={bgImage}
+          src={resolvedBg}
           alt={title}
           className="w-full h-full object-cover"
           priority={true}
@@ -37,7 +40,7 @@ const HeroBanner = ({ title, subtitle, bgImage = '/images/hero-bg.jpg', badge, h
           {title}
         </h1>
         {subtitle && (
-          <p className="text-xl md:text-2xl font-light leading-relaxed">
+          <p className="text-xl md:text-2xl font-light leading-relaxed whitespace-pre-line">
             {subtitle}
           </p>
         )}

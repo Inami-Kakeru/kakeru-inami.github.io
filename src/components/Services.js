@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SEO from '@/components/SEO';
 import OptimizedImage from '@/components/OptimizedImage';
+import HeroBanner from '@/components/Common/HeroBanner';
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
@@ -140,31 +141,11 @@ const Services = () => {
       <SEO {...seoConfig} />
       
       {/* ヒーローセクション */}
-      <section className="relative h-96 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <OptimizedImage
-            src="/images/hero-bg.jpg"
-            alt="サービス・メニュー"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-dark/80 via-dark/60 to-transparent"></div>
-        </div>
-        
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-          <div className="inline-block">
-            <span className="text-sm font-medium text-primary bg-primary/20 px-4 py-2 rounded-full mb-4 inline-block">
-              SERVICES
-            </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl font-mincho font-bold mb-6">
-            サービス・メニュー
-          </h1>
-          <p className="text-xl md:text-2xl font-light leading-relaxed">
-            お客様の美しさを引き出す<br className="md:hidden" />
-            こだわりのメニューをご用意
-          </p>
-        </div>
-      </section>
+      <HeroBanner
+        title="サービス・メニュー"
+        subtitle="お客様の美しさを引き出す\nこだわりのメニューをご用意"
+        badge="SERVICES"
+      />
 
       {/* メインコンテンツ */}
       <section className="py-20 bg-gradient-to-br from-light via-white to-primary/5">

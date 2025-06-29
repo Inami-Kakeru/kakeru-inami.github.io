@@ -2,6 +2,7 @@ import React from 'react';
 import SEO from '@/components/SEO';
 import { images } from '@/utils/images';
 import { menuCategories } from '@/data/menuData';
+import HeroBanner from '@/components/Common/HeroBanner';
 
 const Menu = () => {
   const seoConfig = {
@@ -18,27 +19,10 @@ const Menu = () => {
       <SEO {...seoConfig} />
       
       {/* ヒーローセクション */}
-      <div className="relative h-80 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            src="/images/hero-bg.jpg"
-            alt="メニュー・料金"
-            className="w-full h-full object-cover"
-          />
-          {/* 茶色系の半透明オーバーレイで写真を淡くし、文字の可読性を向上 */}
-          <div className="absolute inset-0 bg-gradient-to-r from-brown-900/70 via-brown-800/60 to-brown-900/50 dark:bg-brown-950/80"></div>
-        </div>
-        <div className="relative z-10 container-custom h-full flex items-center justify-center text-center">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-mincho font-bold mb-4 text-white">
-              メニュー・料金
-            </h1>
-            <p className="text-lg md:text-xl text-white font-mincho">
-              お客様一人ひとりに合わせたメニューをご提案
-            </p>
-          </div>
-        </div>
-      </div>
+      <HeroBanner
+        title="メニュー・料金"
+        subtitle="お客様一人ひとりに合わせたメニューをご提案"
+      />
 
       {/* メインコンテンツ */}
       <div className="bg-white py-16">
