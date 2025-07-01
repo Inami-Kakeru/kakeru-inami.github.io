@@ -166,7 +166,7 @@ const Concept = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20"></div>
               <OptimizedImage
-                src="/images/ir9gaERp9fkO.jpg" 
+                src="/images/concept-ambience.jpg" 
                 alt="ぴあざさるうとの温かい店内" 
                 className="w-full h-full object-cover"
               />

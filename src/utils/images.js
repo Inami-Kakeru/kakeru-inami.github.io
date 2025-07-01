@@ -11,6 +11,11 @@ import whiteHairDye from '../assets/images/白髪染め.png';
 import extensionHair from '../assets/images/エクステ増毛.png';
 import tokioTreatment from '../assets/images/TOKIOインカラミシステムトリートメント.png';
 
+// スタッフ画像
+import matsumotoTakako from '../assets/images/マツモトタカコ.png';
+import kakutaYoshimi from '../assets/images/カクタヨシミ.png';
+import nakayamaMami from '../assets/images/ナカヤママミ.png';
+
 // 画像のエクスポート
 export const images = {
   heroBg,
@@ -22,7 +27,11 @@ export const images = {
   // メニュー関連画像
   whiteHairDye,
   extensionHair,
-  tokioTreatment
+  tokioTreatment,
+  // スタッフ画像
+  matsumotoTakako,
+  kakutaYoshimi,
+  nakayamaMami
 };
 
 export default images; 

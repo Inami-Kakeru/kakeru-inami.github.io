@@ -73,7 +73,7 @@ const TestPage = () => {
           <div>
             <h3 className="text-lg font-bold mb-2">通常の画像</h3>
             <OptimizedImage
-              src="/ナカヤママミ.png"
+              src="/images/ナカヤママミ.png"
               alt="テスト画像1"
               className="w-full h-64 object-cover rounded-lg"
             />
@@ -82,7 +82,7 @@ const TestPage = () => {
           <div>
             <h3 className="text-lg font-bold mb-2">優先読み込み画像</h3>
             <OptimizedImage
-              src="/マツモトタカコ.png"
+              src="/images/マツモトタカコ.png"
               alt="テスト画像2"
               className="w-full h-64 object-cover rounded-lg"
               priority={true}
